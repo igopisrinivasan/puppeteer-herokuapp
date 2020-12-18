@@ -1,0 +1,58 @@
+{
+  "name": "puppeteer-herokuapp",
+  "version": "1.0.0",
+  "description": "Automating using https://the-internet.herokuapp.com/ puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igopisrinivasan/puppeteer-herokuapp.git"
+  },
+  "author": "Gopi Srinivasan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igopisrinivasan/puppeteer-herokuapp/issues"
+  },
+  "homepage": "https://github.com/igopisrinivasan/puppeteer-herokuapp#readme",
+  "devDependencies": {
+    "@types/cucumber": "^6.0.1",
+    "@types/node": "^14.14.14",
+    "@types/puppeteer": "^5.4.2",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.3.0",
+    "mkdirp": "^1.0.4",
+    "puppeteer": "^5.5.0",
+    "puppeteer-to-istanbul": "^1.4.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.1.1",
+    "tslint": "^5.20.1",
+    "typescript": "^4.1.3"
+  },
+  "keywords": [],
+  "dependencies": {
+    "nyc": "^15.1.0"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  }
+}
