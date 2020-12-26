@@ -18,7 +18,7 @@
   "homepage": "https://github.com/igopisrinivasan/puppeteer-herokuapp#readme",
   "devDependencies": {
     "@types/cucumber": "^6.0.1",
-    "@types/node": "^14.14.14",
+    "@types/node": "^14.14.16",
     "@types/puppeteer": "^5.4.2",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
