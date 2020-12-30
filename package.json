@@ -10,7 +10,7 @@
     "cucumber-windows": "cucumber-js ./features/*.feature --require-module ts-node/register --require ./src/*/*.ts --format json:./reports/json/cucumber_report.json",
     "report": "ts-node ./utils/reporter.ts",
     "test-mac": "npm run cucumber ; npm run report",
-    "test": "npm run pretest && npm run cucumber-windows && npm run report",
+    "test": "npm run pretest && npm run cucumber-windows ",
     "code-coverage-report": "nyc report --reporter=html",
     "test-coverage": "npm run test && npm run code-coverage-report"
   },
